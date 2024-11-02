@@ -18,14 +18,16 @@ spec:
       module: frontend
   template:
     metadata:
-      project: expense
-      environment: dev
-      created_by: HemanthKumar
-      module: frontend
+      labels:
+        project: expense
+        environment: dev
+        created_by: HemanthKumar
+        module: frontend
     spec:
       containers:
       - name: frontend
         image: hemanthkumar75:frontend/v1
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
