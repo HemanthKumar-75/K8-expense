@@ -28,17 +28,18 @@ spec:
       module: backend
   template:
     metadata:
-      project: expense
-      environment: dev
-      created_by: HemanthKumar
-      module: backend
+      labels:
+        project: expense
+        environment: dev
+        created_by: HemanthKumar
+        module: backend
     spec:
       containers:
         - name: backend
           image: hemanthkumar75:backend/v1
           envFrom:
             - configMapRef:
-              name: backend
+                name: backend
           ports:
             - containerPort: 8080
 ---
