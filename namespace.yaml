@@ -6,7 +6,6 @@ metadata:
     project: expense
     environment: dev
     created_by: HemanthKumar
-    modules: "mysql, backend, frontend"
 
 
 # to avoid to run the every time as kubectl <text> -n expense, t will sets the default namespace as expense
