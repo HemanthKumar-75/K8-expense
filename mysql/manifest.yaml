@@ -18,6 +18,7 @@ spec:
       module: db
   template:
     metadata:
+    labels:
       project: expense
       environment: dev
       created_by: HemanthKumar
