@@ -18,11 +18,11 @@ spec:
       module: db
   template:
     metadata:
-    labels:
-      project: expense
-      environment: dev
-      created_by: HemanthKumar
-      module: db
+      labels:
+        project: expense
+        environment: dev
+        created_by: HemanthKumar
+        module: db
     spec:
       containers:
       - name: mysql
