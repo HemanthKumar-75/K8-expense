@@ -28,8 +28,8 @@ spec:
       - name: frontend
         image: hemanthkumar75/frontend:v1
         imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+        # ports:
+        # - containerPort: 80
 ---
 kind: Service
 apiVersion: v1

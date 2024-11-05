@@ -4,7 +4,7 @@ metadata:
   name: backend
   namespace: expense
   labels:
-    app: backend-mysql
+    app: backend
 data:
   DB_HOST: mysql
 ---
@@ -41,8 +41,8 @@ spec:
           envFrom:
             - configMapRef:
                 name: backend
-          ports:
-            - containerPort: 8080
+          # ports:
+          #   - containerPort: 8080
 ---
 kind: Service
 apiVersion: v1
