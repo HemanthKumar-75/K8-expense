@@ -25,16 +25,16 @@ spec:
         module: frontend
     spec:
       containers:
-      - name: frontend
-        image: hemanthkumar75/frontend:v1
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 80
+        - name: frontend
+          image: hemanthkumar75/frontend:v1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
 ---
 kind: Service
 apiVersion: v1
 metadata:
-  name:  frontend
+  name: frontend
   namespace: expense
 spec:
   selector:
@@ -44,7 +44,7 @@ spec:
     module: frontend
   type: LoadBalancer
   ports:
-  - name:  frontend
-    protocol: TCP
-    port:  80
-    targetPort:  80
+    - name: frontend
+      protocol: TCP
+      port: 80
+      targetPort: 80
