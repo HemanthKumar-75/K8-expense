@@ -28,13 +28,8 @@ spec:
         - name: mysql
           image: hemanthkumar75/mysql:v1
           imagePullPolicy: Always
-<<<<<<< HEAD
           ports:
             - containerPort: 3306
-=======
-          # ports:
-          #   - containerPort: 3306
->>>>>>> a6678e4908a4ab6550bdca917dd6b7ff9b2f2aec
 ---
 kind: Service
 apiVersion: v1
