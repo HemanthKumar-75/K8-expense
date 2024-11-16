@@ -42,7 +42,7 @@ spec:
     environment: dev
     created_by: HemanthKumar
     module: frontend
-  type: NodePort #LoadBalancer
+  type: LoadBalancer
   ports:
     - name: frontend
       protocol: TCP
